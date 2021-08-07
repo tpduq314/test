@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src="../js/jquery.js"></script>
+<script>
+ $(document).ready(function(){
+	$("button").click(function(){
+		$("#san").show().fadeOut("slow").slideDown("slow");//여러개의 함수를 한줄로 나열해서 동시효과를 노리는 메서드 체이닝 방법
+		//-> 해당 요소를 보이게했다가 사라졌다가 다시 천천히 밀어내리는 효과
+	}); 
+ });
+</script>
+</head>
+<body>
+<button>메서드 체이닝</button>
+<hr/>
+<img id="san" src="../images/seolak.jpg" width="200" height="160" alt="오대산"style=display:none;/>
+</body>
+</html>

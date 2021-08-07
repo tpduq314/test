@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style>
+ div{
+  width:50px; height:50px;
+  background-color:yellow;
+  border:1px solid black;
+  text-align:center;
+
+  /*문제)글자 수직 중앙 정렬을 해보세요
+  */
+  line-height:50px
+ }
+ div#box2{
+  transform:translate(100px,0px); /*왼쪽에서 오른쪽으로 100픽셀만큼 수평 평행이동-> css3에서 추가된 변환효과*/
+  background-color:blue;
+ }
+ #box3{
+ transform:scale(1.2,1.2); /*x방향 1.2배,y방향 1.2배로확대*/
+ background:red;
+ }
+ #box4{
+  transform:rotate(30deg); /*30도만큼 박스를 회전시킴*/
+  background-color:orange;
+ }
+</style>
+</head>
+<body>
+ <div id="box1">Box1</div>
+ <div id="box2">Box2</div>
+ <div id="box3">Box3</div>
+ <div id="box4">Box4</div>
+</body>
+</html>

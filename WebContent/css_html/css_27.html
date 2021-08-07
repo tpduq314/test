@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style>
+ body{
+  margin:0px; /*상하좌우 바깥여백을 0픽셀로 설정*/
+  padding:0px; /*상하좌우 안여백을 0픽셀로 설정*/
+ }
+ p{
+  margin:0px; padding:0px;
+  background-color:yellow; border:1px solid red;
+ }
+ #target{
+  /*문제 ) 상하좌우 바깥여백을 동시에 10픽셀, 상하좌우 안여백을 동시에 20픽셀, 
+  배경색은 밝은그린, 테두리 두께 1픽셀, 실선, 테두리 선 색 오렌지로*/ 
+ margin:10px; padding:20px;
+ background-color:#00ff00; border:1px solid orange;
+ }
+</style>
+</head>
+<body>
+ <p>margin:0px, padding:0px 인 단락입니다.</p>
+ <p id="target"> margin:10px, padding:20px인 단락입니다.</p>
+</body>
+</html>

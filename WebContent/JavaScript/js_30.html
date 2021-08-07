@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+ <script>
+  function add(a,b){
+	  var sum=0; //지역변수 로 add(){}블록 내에서만 사용 가능하다
+	  
+	  sum=a+b;
+	  return sum;
+  }
+  var result=add(10,20);
+  document.write("result="+result+"<hr/>");
+//  document.write("sum="+sum);
+  
+  var sum2=0;
+  function add2(a,b){
+	  sum2=a+b;
+	  alert(sum2);
+  }
+  add2(100,200);
+  document.write("sum2="+sum2);
+ </script>
+</head>
+<body>
+
+</body>
+</html>

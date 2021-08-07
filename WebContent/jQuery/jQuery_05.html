@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src="../js/jquery.js"></script>
+</head>
+<body>
+<button>Show Cat</button><hr/>
+<img id="cat" src="../images/cat.jpg" width="120" height="100" alt="고양이" style="display:none;"/>
+<!-- css로 해당 고양이 이미지를 숨겨놨음. 이걸 밑에 jquery코드로 나오게할꺼임 -->
+<script>
+ $(document).ready(function(){
+	 $("button").click(function(){
+		$("#cat").show("slow");//해당 영역을 jQuery show()함수로 보이게 한다. 
+	 });
+ });
+</script>
+</body>
+</html>

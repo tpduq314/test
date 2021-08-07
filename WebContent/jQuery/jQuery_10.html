@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src="../js/jquery.js"></script>
+<script>
+ $(document).ready(function(){
+	$("#slideDown").click(function(){
+		$('#cat').slideDown('slow');//jQuery slideDown()함수는 해당 요소를 천천히 밀어내린다.
+	});
+	
+	$('#slideUp').click(function(){
+		$('#cat').slideUp('slow');//jQuery slideUp()함수는 해당 요소를 천천히 밀어올린다.
+	});
+ });
+</script>
+</head>
+<body>
+<input type="button" value="slideDown()" id="slideDown"/>
+<input type="button" value="slideUp()" id="slideUp"/>
+<hr/>
+<img src="../images/cat.jpg" width="200" height="150" alte="고양이" id="cat" style="display:none; position:relative"/>
+</body>
+</html>

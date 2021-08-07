@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script>
+ function calc(){//function 예약어로 함수명을 정의
+	 var x=document.getElementById('x').value;//id가 x인 요소값을 가져온다.
+	 var y=document.getElementById('y').value;
+	 var sum=parseInt(x)+parseInt(y); 
+	 
+	 document.getElementById('sum').value=sum;//덧셈 계산결과값을 sum 아이디 요소 필드에 대입한다.
+ }
+</script>
+</head>
+<body>
+<h3>덧셈 계산기</h3>
+<form>
+ 첫번째 정수: <input type="text" id="x" size="10" /><br/><br/> <!-- br태그를 두번사용하면 두줄 줄바꿈함 -->
+ 첫번째 정수: <input type="text" id="y" size="10" /><br/><br/> <!-- br태그를 두번사용하면 두줄 줄바꿈함 -->
+ 합계: <input type="text" id="sum" size="14" /><br/><br/>
+ <input type="button" value="계산" onclick="calc();"/>
+</form>
+</body>
+</html>

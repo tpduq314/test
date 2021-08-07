@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src="../js/jquery.js"></script>
+<script>
+ $(document).ready(function(){
+	$('#btn_result').click(function(){
+		$('#cat').animate({
+			left:'100px',
+			opacity:'0.5',//투명도 조절
+			width:'150px',//넓이가 150px로 변경
+		});
+	}); 
+ });
+</script>
+</head>
+<body>
+ <input type="button" value="이미지 변경" id="btn_result" />
+ <hr/>
+ <img src="../images/cat.jpg" id="cat" width="100px" height="80px" alt="고양이" style="position:relative;"/>
+</body>
+</html>

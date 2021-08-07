@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+ <script>
+  function onButtonDown(btn){
+	  btn.style.color="orange";//버튼 위에 출력되는 캡션문자열 색상을 적용
+  }
+  function onButtonUp(btn){
+	  btn.style.color="green";
+  }
+ </script>
+</head>
+<body>
+<button onmousedown="onButtonDown(this);" onmouseup="onButtonUp(this);">눌러보세요.</button>
+<!-- this는 버튼을 가리킴 -->
+</body>
+</html>

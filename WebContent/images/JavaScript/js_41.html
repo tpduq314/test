@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+<script>
+ var s="abcDef";
+ 
+ var result01=s.toLowerCase();//영문 소문자로 변경
+ var result02=s.toUpperCase();//영문 대문자로 변경
+ 
+ document.write("s = "+s+"<br/>");
+ document.write("영문 소문자 = "+result01+"<br/>");
+ document.write("영문 대문자 = "+result02+"<br/>");
+ 
+ var s1="서울시";
+ var s2="부산시";
+ 
+ s3=s1.concat(s2);//문자를 서로 연결->+문자열 연결 연산기호를 사용해도 된다.
+ document.write(s3+"<br/>");
+ 
+ var str01="Hong's number is 123-4567.";
+ result=str01.replace("Hong's","Kim's");//Hong's 를 Kim's로 변경
+ document.write(result+"<hr/>");
+ 
+ var str02="One, Two, Three, Four, Five";
+ var arr=str02.split(",");//,구분자를 기준으로 문자를 분리해서 배열로 반환
+ alert(arr.length);
+ 
+ for(var i=0; i<arr.length;i++){
+	 document.write("arr["+i+"] : "+arr[i]+"<br/>");
+ }
+ dccument.write("<hr/>");
+ 
+</script>
+
+</body>
+</html>

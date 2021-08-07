@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> ul li태그 메뉴구성하기</title>
+<style>
+ ul{
+  list-style:none;/*목록 앞 점 없앰.  매우 중요*/
+  text-align:center;/*수평중앙정렬*/
+  border-top:1px solid red;/*윗줄 선 두께 1픽셀, 실선, 선색을 빨강으로 처리*/
+  border-bottom:1px solid red; /*밑줄선 두께를 1픽셀, 실선, 선색을 빨강으로 처리*/
+  padding:10px 0px; /*상하 안여백을 10픽셀, 좌우 안여백을 0픽셀로 처리*/
+ }
+ ul li{
+  display:inline;/*수직목록을 수평정렬로 변경*/
+  text-transform: uppercase; /*영문 대문자로 변경*/
+  padding:0px 10px; letter-spacing: 10px /*항목간 글자간 간격 설정*/
+ }
+ ul li a{
+  text-decoration:none; /*하이퍼링크된곳 밑줄선 사라지게함. 매우중요*/
+ }
+ ul li a:hover{
+  text-decoration : underline; /*하이퍼링크 된곳 마우스 오버시 밑줄선을 나오게함*/
+ }
+</style>
+</head>
+<body>
+ <ul>
+  <li ><a href="#">HOME</a></li>
+  <li ><a href="#">BLOG</a></li>
+  <li ><a href="#">ABOUT</a></li>
+  <li ><a href="#">CONTACT</a></li>
+ </ul>
+</body>
+</html>

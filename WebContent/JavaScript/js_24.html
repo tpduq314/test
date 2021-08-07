@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script>
+ var names=new Array('홍길동','이순신','강감찬');
+ 
+ for(var i=0;i<names.length;i++){
+	 document.write(names[i]+" ");
+ }
+ document.write("<hr/>");
+ var comp=new Array();
+ comp[0]="사과";
+ comp[1]=new Date();;
+ comp[2]=100;
+ comp[3]=100.3;
+ //자바스크립트 배열은 복수개의 자료형을 동시 저장 가능하다. 가변적 배열도 가능하다.
+ 
+ document.write("comp 배열원소 개수 : "+comp.lenght+"<hr/>");
+ for(var i=0; i<comp.length;i++){
+	 document.write(comp[i]+"<br/>");
+ }
+</script>
+</head>
+<body>
+
+</body>
+</html>

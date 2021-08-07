@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>폼 유효성 검증(validate)</title>
+<script>
+ function checkNotEmpty(field){
+	 if(field.value.length == 0){
+		 //length는 문자열 길이. 첫문자는 1부터 시작.
+		 alert('이름을 입력하세요!');
+		 filed.focus();//이름 입력필드로 포커스 이동
+		 return false;//폼 전송을 안함
+	 }
+	 return true;//폼 전송
+ }
+</script>
+</head>
+<body>
+<form>
+ 이름 :<input type="text" id="user" size="14"/>
+ <input type="buttton" value="확인" onclick="checkNotEmpty(document.getElementById('user'))"/>
+</form>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+ function move01(){
+	 f.bb.value=f.aa.value;//첫번째 입력필드에 입력된 값을 두번째 입력박스에 대입
+	 f.aa.value='';//첫번째 입력박스를 초기화
+ }
+ 
+ /*
+  문제) move02()함수를 정의하고 두번째 입력박스 입력값이 첫번째 입력박스에 대입되고, 두번째 입력필드 초기화를 시켜본다.
+ */
+ function move02(){
+	  f.aa.value=f.bb.value;
+	  f.bb.value='';
+  }
+</script>
+</head>
+<body>
+<form name="f">
+ 입력1:<input type="text" name="aa" onblur=move01();/> <br><br>
+ 입력2:<input type="text" name="bb" onblur=move02();/> 
+</form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+<form method="post" action="3">
+ 이메일:<input type="email" required /><br/><!-- required 속성은 유효한 이메일인지 검사한다. 즉 유효성 검증처리 validate를 한다. -->
+ URL:<input type="url" required /><br/>
+ 전화번호:<input type="tel" required pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" title="###-####-####"/><br/>
+ <!-- pattern에 지정된 정규식인[0-9]{4}의 뜻은 0-9사이값을 4번반복. 이를 검증하기위해 title에 입력형태를 지정해줘야됨 -->
+ 신발사이즈:<input type="number" min="230" max="290" step="10" value="260"/><br/>
+ 테니스 스킬:<input type="range" min="1" max="10" value="1"/><br/>
+ 날짜:<input type="date"/><br/>
+ 
+ <input type="submit" value="제출"/>
+ <input type="result" value="취소"/>
+</form>
+</body>
+</html>

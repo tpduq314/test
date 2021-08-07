@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>1초 간격으로 배경색 변경</title>
+<script>
+ function change(){
+	 t=new Date();
+	 s=t.getSeconds();//초값
+     na=s%6;//0~5
+     
+     if(na==0){
+    	 document.bgColor="pink";//배경색을 분홍으로
+     }else if(na==1){
+    	 document.bgColor="#FFFF00";
+     }else if(na==2){
+    	 document.bgColor="#f90";
+     }else if(na==3){
+    	 document.bgColor="#690";
+     }else if(na==4){
+    	 document.bgColor="#33FF00";
+     }else{//나머지가 5일때 
+    	 document.bgColor="#99FFFF";
+     }
+     setTimeout('change()',1000);//1초간격으로 매번 change()함수를 호출
+ }
+</script>
+</head>
+<body onLoad = 'change();'><!-- onLoad 는 웹페이지 시작과 동시에 발생하며  이 이벤트 반대는 onUnload이다. onUnload는 웹페이지가 사라짐과 동시에 발생. -->
+<h2>화면 배경색이 변경됩니다. 1초간격으로.</h2>
+</body>
+</html>

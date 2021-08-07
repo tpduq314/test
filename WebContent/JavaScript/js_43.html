@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script>
+ var myArray=new Array();
+ myArray[0]="apple";
+ document.write("myArray 배열크기 : "+myArray.length+"<br/>");
+ 
+ myArray[99]="banana";//배열크기가 증가->가변배열
+ document.write("증가한 배열크기 : "+myArray.length+"<hr/>");
+ 
+ var myArray2=new Array();
+ myArray2[0]=100;
+ myArray2[1]=100.3;
+ myArray2[2]=true;
+ myArray2[3]=new Date;
+ myArray2[4]="홍길동";
+ 
+ for(var i=0; i<myArray2.length; i++){
+	 document.write(myArray2[i]+"<br/>");
+ }
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<style>
+ body{
+  margin:0; padding:0;
+ }
+</style>
+<body>
+ <canvas id="myCanvas" width="300" height="200"></canvas>
+ <script>
+  var canvas=document.getElementById('myCanvas');
+  var ctx=canvas.getContext('2d');
+  
+  ctx.beginPath();//경로 지정을 시작. 경로를 초기화한다.
+  ctx.moveTo(0,0);//직선의 시작점
+  ctx.lienTo(100,100);//직선의 끝점
+  ctx.lineTo(150,50);
+  ctx.lineTo(200,200);
+  ctx.stroke();//이 메서드를 호출해야 그림이 실제로 그려진다.
+ </script>
+</body>
+</html>
